@@ -70,5 +70,5 @@ stages:
               scriptType: 'bash'
               scriptLocation: 'inlineScript'
               inlineScript: |
-                echo $apimupdate
-                $apimupdate
+                echo $(apimupdate)
+                $(apimupdate)

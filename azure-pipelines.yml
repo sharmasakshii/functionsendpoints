@@ -69,4 +69,4 @@ stages:
               azureSubscription: 'Free Trial(3e3c63cc-eef2-4386-9f86-ea6a77a47519)'
               scriptType: 'bash'
               scriptLocation: 'inlineScript'
-              inlineScript: '$apimupdate'
+              inlineScript: 'az apim api import --resource-group vkak --service-name testing-rag-new-vkak --path endpoints --api-id testing-main --specification-url https://GS-afa-functionASDFZXC.azurewebsites.net/api/endpoints --service-url https://GS-afa-functionASDFZXC.azurewebsites.net/api/ --specification-format OpenApi --verbose'

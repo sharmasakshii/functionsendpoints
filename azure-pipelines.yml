@@ -53,5 +53,5 @@ stages:
               appName: 'GS-afa-functionASDFZXC'
               deployToSlotOrASE: true
               resourceGroupName: 'testing-raghav122'
-              slotName: 'production'
+              slotName: 'green'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'

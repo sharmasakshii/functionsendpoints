@@ -63,3 +63,10 @@ stages:
               WebAppName: 'GS-afa-functionASDFZXC'
               ResourceGroupName: 'testing-raghav122'
               SourceSlot: 'green'
+              
+          - task: AzureCLI@2
+            inputs:
+              azureSubscription: 'Free Trial(3e3c63cc-eef2-4386-9f86-ea6a77a47519)'
+              scriptType: 'bash'
+              scriptLocation: 'inlineScript'
+              inlineScript: '$apimupdate'

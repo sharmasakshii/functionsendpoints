@@ -67,7 +67,7 @@ stages:
         inputs:
           script: |
             # Define the Function App endpoint URL
-            ENDPOINT_URL="https://gs-afa-function-001123-blue.azurewebsites.net/api/endpoint"
+              echo "Using endpoint URL: ${ENDPOINT_URL}"
             
             # Function to perform the health check
             health_check() {

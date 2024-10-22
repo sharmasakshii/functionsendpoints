@@ -50,9 +50,9 @@ stages:
             inputs:
               azureSubscription: 'Free Trial(3e3c63cc-eef2-4386-9f86-ea6a77a47519)'
               appType: 'functionAppLinux'
-              appName: 'GS-afa-functionASDFZXC'
+              appName: 'GS-afa-function-001123'
               deployToSlotOrASE: true
-              resourceGroupName: 'testing-raghav122'
+              resourceGroupName: 'vkak'
               slotName: 'green'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
           
@@ -60,8 +60,8 @@ stages:
             inputs:
               azureSubscription: 'Free Trial(3e3c63cc-eef2-4386-9f86-ea6a77a47519)'
               Action: 'Swap Slots'
-              WebAppName: 'GS-afa-functionASDFZXC'
-              ResourceGroupName: 'testing-raghav122'
+              WebAppName: 'GS-afa-function-001123'
+              ResourceGroupName: 'vkak'
               SourceSlot: 'green'
               
           - task: AzureCLI@2

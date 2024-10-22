@@ -67,7 +67,7 @@ stages:
         inputs:
           script: |
             # Define the Function App endpoint URL
-            ENDPOINT_URL="https://gs-afa-function-001123-blue.azurewebsites.net/api/endpoints"
+            ENDPOINT_URL="https://gs-afa-function-001123-blue.azurewebsites.net/api/endpoint"
             
             # Function to perform the health check
             health_check() {
@@ -99,6 +99,13 @@ stages:
             
             # Call the health check function
             health_check
+      - task: AzureAppServiceManage@0
+        inputs:
+          azureSubscription: 'Free Trial(3e3c63cc-eef2-4386-9f86-ea6a77a47519)'
+          Action: 'Swap Slots'
+          WebAppName: 'GS-afa-function-001123'
+          ResourceGroupName: 'vkak'
+          SourceSlot: 'blue'
           
       - task: AzureCLI@2
         inputs:

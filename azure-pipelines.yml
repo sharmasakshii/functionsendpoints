@@ -50,7 +50,7 @@ stages:
             inputs:
               azureSubscription: 'Free Trial(3e3c63cc-eef2-4386-9f86-ea6a77a47519)'
               appType: 'functionAppLinux'
-              appName: 'GS-afa-function-001123'
+              appName: 'GS-afa-function-dev-eastus-001123'
               deployToSlotOrASE: true
               resourceGroupName: 'vkak'
               slotName: 'blue'
@@ -103,7 +103,7 @@ stages:
         inputs:
           azureSubscription: 'Free Trial(3e3c63cc-eef2-4386-9f86-ea6a77a47519)'
           Action: 'Swap Slots'
-          WebAppName: 'GS-afa-function-001123'
+          WebAppName: 'GS-afa-function-dev-eastus-001123'
           ResourceGroupName: 'vkak'
           SourceSlot: 'blue'
           
